@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryan Yanko</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="s">
+    <header>
+      <div class="wordmark">Ryan Yanko<span class="cursor"></span></div>
+      <nav>
+        <a class="on" onclick="go('home',this)">home</a>
+        <a onclick="go('projects',this)">projects</a>
+        <a onclick="go('writing',this)">writing</a>
+      </nav>
+    </header>
+
+    <!-- HOME -->
+    <div id="p-home" class="panel on">
+      <p class="bio">CS + linguistics. I think about what computation actually is -- not just what it does. I like small machines, tight constraints, and questions that don't have clean answers yet. Currently finishing up at Connecticut College.</p>
+      <div class="sec">now</div>
+      <div class="now-item">reading &nbsp;-- <span>[current book or paper]</span></div>
+      <div class="now-item">building -- <span>[current project]</span></div>
+      <div class="now-item">writing &nbsp;-- <span>[current essay]</span></div>
+      <div class="sec">contact</div>
+      <div class="links-row">
+        <a href="https://github.com/ryanbyanko">github</a>
+        <a href="mailto:ryanbyanko@gmail.com">email</a>
+        <a href="https://www.youtube.com/@ryanyanko3547">youtube</a>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div id="p-projects" class="panel">
+      <div class="sec">projects</div>
+
+      <!-- TEMPLATE: copy this block to add a project
+      <div class="pc" onclick="toggle(this)">
+        <div class="pc-head">
+          <span class="pc-name">project name</span>
+          <span class="pc-blurb">one line description</span>
+          <span class="pc-toggle">[+]</span>
+        </div>
+        <div class="pc-body">
+          <p class="pc-desc">Longer description goes here.</p>
+          <div class="pc-links">
+            <div class="pc-link"><span class="lk">repo</span><a href="#">github link</a></div>
+            <div class="pc-link"><span class="lk">demo</span><a href="#">live demo link</a></div>
+            <div class="pc-link"><span class="lk">writeup</span><a href="post.html?post=your-post">Post title here</a><span class="note"> -- devlog</span></div>
+            <div class="pc-link"><span class="lk">video</span><a href="#">youtube link</a></div>
+          </div>
+        </div>
+      </div>
+      -->
+
+      <div class="pc" onclick="toggle(this)">
+        <div class="pc-head">
+          <span class="pc-name">ti-83+ assembly quine</span>
+          <span class="pc-blurb">self-replicating program for the Z80</span>
+          <span class="pc-toggle">[+]</span>
+        </div>
+        <div class="pc-body">
+          <p class="pc-desc">A self-replicating program written and hand-optimized for the Z80 architecture inside a TI-83+. 64k RAM, every byte deliberate. The constraint is the point.</p>
+          <div class="pc-links">
+            <div class="pc-link"><span class="lk">repo</span><a href="https://github.com/ryanbyanko/ti83-quine">github.com/ryanbyanko/ti83-quine</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pc" onclick="toggle(this)">
+        <div class="pc-head">
+          <span class="pc-name">esolang</span>
+          <span class="pc-blurb">Clash Royale-inspired esoteric language</span>
+          <span class="pc-toggle">[+]</span>
+        </div>
+        <div class="pc-body">
+          <p class="pc-desc">A fully designed and implemented esoteric programming language with a Clash Royale-inspired instruction model. Custom interpreter, hand-rolled from scratch.</p>
+          <div class="pc-links">
+            <div class="pc-link"><span class="lk">repo</span><a href="https://github.com/ryanbyanko/esolang">github.com/ryanbyanko/esolang</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pc" onclick="toggle(this)">
+        <div class="pc-head">
+          <span class="pc-name">redstone computer</span>
+          <span class="pc-blurb">logic gates all the way down</span>
+          <span class="pc-toggle">[+]</span>
+        </div>
+        <div class="pc-body">
+          <p class="pc-desc">A functioning computer built in Minecraft redstone. ALU, memory, the works. If it computes, it counts.</p>
+          <div class="pc-links">
+            <div class="pc-link"><span class="lk">repo</span><a href="https://github.com/ryanbyanko/redstone-cpu">github.com/ryanbyanko/redstone-cpu</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pc" onclick="toggle(this)">
+        <div class="pc-head">
+          <span class="pc-name">custom ISA vms</span>
+          <span class="pc-blurb">hand-designed instruction sets</span>
+          <span class="pc-toggle">[+]</span>
+        </div>
+        <div class="pc-body">
+          <p class="pc-desc">Various virtual machines built around instruction sets I designed myself. Exploring what a minimal architecture needs to be useful -- and where that line is.</p>
+          <div class="pc-links">
+            <div class="pc-link"><span class="lk">repo</span><a href="https://github.com/ryanbyanko/isa-vms">github.com/ryanbyanko/isa-vms</a></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- WRITING -->
+    <div id="p-writing" class="panel">
+      <div class="sec">writing</div>
+      <!-- TEMPLATE: copy this block to add a post
+      <div class="wi">
+        <a class="wi-title" href="post.html?post=your-post-filename">Post title here</a>
+        <span class="wi-meta">Mar 2026</span>
+      </div>
+      -->
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
